@@ -1,0 +1,36 @@
+{
+    "name": "opensea-rss",
+    "version": "0.0.1",
+    "description": "RSS feeds for OpenSea collections",
+    "keywords": [
+        "OpenSea",
+        "RSS",
+        "NFT",
+        "node",
+        "express",
+        "fastify",
+        "glitch"
+    ],
+    "repository": {
+        "url": "https://github.com/calenfretts/opensea-rss"
+    },
+    "license": "MIT",
+    "author": "Calen Fretts (https://calenfretts.com)",
+    "main": "app.js",
+    "scripts": {
+        "dev": "source .env; ENV=dev node --experimental-modules app.js",
+        "start": "source .env; node --experimental-modules app.js"
+    },
+    "dependencies": {
+        "@fastify/aws-lambda": "^3.3.0",
+        "entities": "^4.4.0",
+        "fastify": "^3.14.1",
+        "feed": "^4.2.2",
+        "handlebars": "^4.7.7",
+        "point-of-view": "^4.14.0",
+        "request": "^2.88.2"
+    },
+    "engines": {
+        "node": "12.x"
+    }
+}
