@@ -22,8 +22,5 @@ exports.handler = async (event, context, callback) => {
     //     },
     //     body: JSON.stringify(context),
     // };
-    response.headers = {
-        "Content-Type": "text/html",
-    };
     callback(null, response); // sending HTML back
 }
